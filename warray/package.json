@@ -1,0 +1,20 @@
+{
+  "name": "graphql-array-server",
+  "version": "1.0.0",
+  "author": "hexacta",
+  "description": "GraphQL server example",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^5.8.5",
+    "express": "^4.15.3",
+    "express-graphql": "^0.6.6",
+    "graphql": "^0.10.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
