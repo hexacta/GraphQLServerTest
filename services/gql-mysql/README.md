@@ -15,7 +15,7 @@ El servicio estará escuchando en el puerto 2500. El ejemplo utiliza la herramie
 
 ### Query / Mutation
 Estos son unos ejemplos de las operaciones que podemos realizar.
-```json
+```
 query GetSomePlayerWithTeam {
   player(id: 11) {
     name,
