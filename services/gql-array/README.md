@@ -11,7 +11,7 @@ El servicio estará escuchando en el puerto 2400. El ejemplo utiliza la herramie
 
 ### Query / Mutation
 Estos son unos ejemplos de las operaciones que podemos realizar.
-```json
+```
 mutation AddTodo {
   add(title: "My first task") {
     title
