@@ -105,8 +105,16 @@ export const MutationAdd = {
 		}
 	},
 	resolve: (root, args) => {
+
+		function getId(min, max) {
+			let base = (new Date().getTime()) / 10000000000000;
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			return Math.floor(base * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+		}
+
 		TODOList.push({
-			id: new Date().getTime(),
+			id: getId(1, 2147483647),
 			title: args.title,
 			description: args.title + ' description',
 			done: false
